@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Red Scarf Girl</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrap">
+  <div id="screen">
+    <canvas id="game" width="320" height="240" aria-label="Game screen"></canvas>
+    <div id="hud"><div id="hudCh"></div><div id="hudGoal"></div><div id="hudWhere"></div></div>
+    <div id="roomName"></div>
+    <div id="pops"></div>
+    <div id="dlg" class="hide">
+      <canvas id="face" width="12" height="12"></canvas>
+      <div class="dlg-body">
+        <div id="dlgName"></div>
+        <div id="dlgText"></div>
+        <div id="dlgChoices"></div>
+        <div id="dlgHint"></div>
+      </div>
+      <div id="dlgNext">▼</div>
+    </div>
+    <div id="writer" class="hide"></div>
+    <div id="menu" class="hide"></div>
+    <div id="card" class="hide"></div>
+    <div id="title" class="hide"></div>
+  </div>
+  <div id="touch">
+    <div class="dpad">
+      <button data-k="up" class="u">▲</button>
+      <button data-k="left" class="l">◀</button>
+      <button data-k="right" class="r">▶</button>
+      <button data-k="down" class="d">▼</button>
+    </div>
+    <div class="abtn">
+      <button data-k="menu">C<small>menu</small></button>
+      <button data-k="cancel">X<small>run</small></button>
+      <button data-k="confirm" class="big">Z<small>talk</small></button>
+    </div>
+  </div>
+</div>
+<input type="file" id="fileInput" accept=".json,application/json" hidden>
+<script src="js/art.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/rooms.js"></script>
+<script src="js/story.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
